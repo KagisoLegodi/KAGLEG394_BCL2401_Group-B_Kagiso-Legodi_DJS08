@@ -7,6 +7,12 @@ import About from "./components/About"
 function App() {
     return (
       <BrowserRouter>
+      <header>
+        <Link to="/">#VanLife</Link>
+        <nav>
+          <Link to="/about">About</Link>
+        </nav>
+      </header>
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/about" element={<About />}/>

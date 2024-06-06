@@ -1,3 +1,4 @@
+import ReactDOM from 'react-dom/client'
 /**
  * Challenge:
  * Bootstrap the VanLife project by creating the first 2 routes:
@@ -21,4 +22,8 @@ function App() {
   )
 }
 
+ReactDOM
+  .createRoot(document.getElementById('root'))
+  .render(<App />);
+  
 export default App

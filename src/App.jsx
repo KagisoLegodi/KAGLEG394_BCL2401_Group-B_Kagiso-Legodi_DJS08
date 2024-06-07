@@ -16,14 +16,15 @@ function App() {
           <Link to="/vans">Vans</Link>
         </nav>
       </header>
-        <Routes>
-          <Route path="/" element={<Home />}/>
-          <Route path="/about" element={<About />}/>
-          <Route path="/vans" element={<Vans />}/>
-        </Routes>
-      </BrowserRouter>
-    )
-  }
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/vans" element={<Vans />} />
+        <Route path="/vans/:id" element={<VanDetail />} />
+      </Routes>
+    </BrowserRouter>
+  )
+}
 
 ReactDOM
   .createRoot(document.getElementById('root'))

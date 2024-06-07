@@ -7,10 +7,10 @@ import VanDetail from "./components/VanDetail.jsx"
 import "./server.jsx"
 
 function App() {
-    return (
-      <BrowserRouter>
+  return (
+    <BrowserRouter>
       <header>
-        <Link to="/">#VanLife</Link>
+        <Link className="site-logo" to="/">#VanLife</Link>
         <nav>
           <Link to="/about">About</Link>
           <Link to="/vans">Vans</Link>

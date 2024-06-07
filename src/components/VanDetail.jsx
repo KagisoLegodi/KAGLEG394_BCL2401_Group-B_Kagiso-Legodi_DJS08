@@ -6,4 +6,4 @@ export default function VanDetail() {
     console.log(params)
     
     return <h1>Van detail page goes here</h1>
-}
+}// included in the last commit by mistake 

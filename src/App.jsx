@@ -4,11 +4,12 @@ import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Vans from "./pages/Vans.jsx";
 import VanDetail from "./pages/VanDetail.jsx";
-import Dashboard from "./components//Host/Dashboard.jsx";
+
 import Income from "./components/Host/Income.jsx";
 import Reviews from "./components/Host/Reviews.jsx";
 import "./server.jsx";
 import Layout from "./components/Layout.jsx";
+import HostLayout from "./components/HostLayout.jsx";
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/vans" element={<Vans />} />
           <Route path="/vans/:id" element={<VanDetail />} />
-          <Route path="/host" element={<Dashboard />}>
+          
+          <Route path="/host" element={<HostLayout />}>
             <Route path="/host/income" element={<Income />} />
             <Route path="/host/reviews" element={<Reviews />} />
           </Route>

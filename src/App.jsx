@@ -1,11 +1,11 @@
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Home from "./components/Home"
-import About from "./components/About"
-import Vans from "./components/Vans"
-import VanDetail from "./components/VanDetail.jsx"
+import Home from "./pages/Home.jsx"
+import About from "./pages/About.jsx"
+import Vans from "./pages/Vans.jsx"
+import VanDetail from "./pages/VanDetail.jsx"
 import "./server.jsx"
-import Layout from "./pages/Layout.jsx"
+import Layout from "./components/Layout.jsx"
 
 function App() {
   return (

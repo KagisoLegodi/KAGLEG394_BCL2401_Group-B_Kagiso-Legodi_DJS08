@@ -71,7 +71,7 @@ createServer({
   routes() {
     this.namespace = "api";
 
-    this.get("/vans", (schema, request) => {
+    this.get("host/vans", (schema, request) => {
       // Now you can access the request object
       console.log(request); // Should log the request object
       return schema.vans.all();

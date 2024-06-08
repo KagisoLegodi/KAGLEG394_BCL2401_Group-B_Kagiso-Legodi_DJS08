@@ -2,6 +2,6 @@
 
 export default function Reviews() {
     return (
-        <h1>Dashboard goes here</h1>
+        <h1>Review page goes here</h1>
     )
 }

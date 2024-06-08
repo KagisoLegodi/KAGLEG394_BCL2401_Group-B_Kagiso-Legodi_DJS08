@@ -8,12 +8,13 @@ export default function HostLayout() {
         textDecoration: "underline",
         color: "#161616"
     }
-    
+
     return (
         <>
             <nav className="host-nav">
                 <NavLink 
                     to="/host"
+                    end
                     style={({isActive}) => isActive ? activeStyles : null} 
                 >
                     Dashboard

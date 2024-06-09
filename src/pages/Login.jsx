@@ -3,6 +3,7 @@ import { useNavigate, useLocation } from "react-router-dom"
 import { loginUser } from "../api"
 
 
+
 export default function Login() {
     const [loginFormData, setLoginFormData] = React.useState({ email: "", password: "" })
     const [status, setStatus] = React.useState("idle")
@@ -13,6 +14,8 @@ export default function Login() {
         setStatus("submitting")
         loginUser(loginFormData)
             .then(data => {
+                
+            }).finally(() => {
                 setStatus("idle")
             })
     }
@@ -29,7 +32,7 @@ export default function Login() {
         <div className="login-container">
             {
                 location.state?.message &&
-                <h3 className="login-error">{location.state.message}</h3>
+                <h3 className="login-first">{location.state.message}</h3>
             }
             <h1>Sign in to your account</h1>
             <form onSubmit={handleSubmit} className="login-form">

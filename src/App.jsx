@@ -7,7 +7,7 @@ import VanDetail from "./pages/Vans/VanDetail.jsx";
 import Dashboard from "./pages/Host/Dashboard.jsx"
 import Income from "./pages/Host/Income.jsx";
 import Reviews from "./pages/Host/Reviews.jsx";
-import "./server.jsx";
+import "./server.js";
 import Layout from "./components/Layout.jsx";
 import HostLayout from "./components/HostLayout.jsx";
 import HostVans from "./pages/Host/HostVans.jsx";

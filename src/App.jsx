@@ -4,17 +4,17 @@ import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Vans from "./pages/Vans.jsx";
 import VanDetail from "./pages/VanDetail.jsx";
-import Dashboard from "./components/Host/Dashboard.jsx"
-import Income from "./components/Host/Income.jsx";
-import Reviews from "./components/Host/Reviews.jsx";
+import Dashboard from "./pages/Host/Dashboard.jsx"
+import Income from "./pages/Host/Income.jsx";
+import Reviews from "./pages/Host/Reviews.jsx";
 import "./server.jsx";
 import Layout from "./components/Layout.jsx";
 import HostLayout from "./components/HostLayout.jsx";
-import HostVans from "./components/Host/HostVans.jsx";
-import HostVanDetail from "./components/Host/HostVanDetail.jsx";
-import HostVanInfo from "./components/Host/HostVanInfo.jsx";
-import HostVanPricing from "./components/Host/HostVanPricing.jsx";
-import HostVanPhotos from "./components/Host/HostVanPhotos.jsx";
+import HostVans from "./pages/Host/HostVans.jsx";
+import HostVanDetail from "./pages/Host/HostVanDetail.jsx";
+import HostVanInfo from "./pages/Host/HostVanInfo.jsx";
+import HostVanPricing from "./pages/Host/HostVanPricing.jsx";
+import HostVanPhotos from "./pages/Host/HostVanPhotos.jsx";
 
 function App() {
   return (

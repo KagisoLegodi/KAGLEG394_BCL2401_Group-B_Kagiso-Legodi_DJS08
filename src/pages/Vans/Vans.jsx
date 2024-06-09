@@ -16,14 +16,13 @@ export default function Vans() {
             try {
                 const data = await getVans()
                 setVans(data)
-                
             } catch (err) {
                 setError(err)
             } finally {
                 setLoading(false)
             }
         }
-        
+
         loadVans()
     }, [])
 
@@ -60,15 +59,15 @@ export default function Vans() {
             return prevParams
         })
     }
-    
+
     if (loading) {
-        return <h1 aria-live="polite">Loading...</h1>
+        return <h1>Loading...</h1>
     }
     
     if (error) {
-        return <h1 aria-live="assertive">There was an error: {error.message}</h1>
+        return <h1>There was an error: {error.message}</h1>
     }
-    
+
     return (
         <div className="van-list-container">
             <h1>Explore our van options</h1>
